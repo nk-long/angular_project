@@ -1,0 +1,48 @@
+
+<h3>Update Project Request</h3>
+<div style="width: 400px;">
+    <form (ngSubmit)="onSubmit()">
+        <div>
+            <label for="requestId">Request Id </label>
+        <input type="text" class="form-control" id="requestId" required [(ngModel)]="request.requestId" name="requestId">
+       </div>
+
+      
+        <div>
+            <label for="maxStrength">Specialization</label>
+        <input type="text" class="form-control" id="specialization" required [(ngModel)]="request.specialization" name="specialization">
+        </div>
+
+    <div>
+        <label for="assignedStrength">Project Id </label>
+    
+    <input type="text" class="form-control" id="projectId" required [(ngModel)]="project.projectId" name="projectId">
+    </div>
+
+    <div>
+        <label for="specialization">Qualification </label>
+        <input type="text" class="form-control" id="qualification" required [(ngModel)]="request.qualification" name="qualification">
+    </div>
+
+    <div>
+        <label for="noOfRequiredEmployee">No of Required Employee </label>
+        <input type="text" class="form-control" id="noOfRequiredEmployee" required [(ngModel)]="request.noOfRequiredEmployee" name="noOfRequiredEmployee">
+    </div>
+<br>
+    <div>
+        <label for="requeststatus">Request Status</label><br>
+        <select name="requeststatus" id="requeststatus" style="padding:5px;">
+            <option value="hr">Send To HR</option>
+            <option value="reject">Reject</option>
+            <option value="assigned">Employee Assigned</option>
+         
+        <input type="text" class="form-control" id="requeststatus" required [(ngModel)]="request.request_status" name="requeststatus">
+        </select>
+    </div>
+   
+
+    <button type="submit" class="btn btn-success" style="margin-top: 10px;">Update</button>
+</form>
+
+</div>
+

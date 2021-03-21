@@ -1,0 +1,48 @@
+<div *ngIf="request">
+    <div>
+        <label>
+            <b>Request Id:</b>{{request.requestId}}
+        </label>
+    </div>
+    <div>
+        <label>
+            <b>Specialization:</b>{{request.specialization}}
+        </label>
+    </div>
+
+    <div>
+        <label>
+            <b>Project Id:</b>{{request.projectdetails.projectId}}
+        </label>
+    </div>
+
+    <div> 
+        <label>
+            <b>Qualification:</b>{{request.qualification}}
+        </label>
+    </div>
+
+    <div>
+        <label>
+            <b>Number Of Required Employee: </b>{{request.noOfRequiredEmployee}}
+        </label>
+    </div>
+
+    <div>
+        <label>
+            <b>Request Status: </b>{{request.request_status}}
+        </label>
+    </div>
+
+
+<br>
+<br>
+ <button (click)="postJob()"
+   class="btn btn-primary">Post The Vacancy</button>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   <button (click)="requestlistlink()"
+   class="btn btn-primary">Back to view request</button>
+
+
+   
+</div>

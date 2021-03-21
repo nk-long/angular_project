@@ -1,0 +1,29 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h2>Interview Schedule</h2> 
+    </div>
+    <div class="panel-body">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>InterviewID</th>
+                    <th>EmployeeID</th>
+                    <th>ApplicationID</th>
+                    <th>ProjectDetails</th>
+                    <th>InterviewDate</th>
+                    <th>ModeOfInterview</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let interv of interview | async">
+                    <td>{{interv.interviewId}}</td>
+                    <td>{{interv.employeeDetails.employeeId}}</td>
+                    <td>{{interv.applicationDetails.applicationId}}</td>
+                    <td>{{interv.projectDetails.projectId}}</td>
+                    <td>{{interv.interviewDate}}</td>
+                    <td>{{interv.modeOfInterview}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

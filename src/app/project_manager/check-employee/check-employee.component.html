@@ -1,0 +1,35 @@
+
+
+<div class="panel panael-primary">
+    <div class="panel-heading">
+        <h2>Employee List</h2>
+    </div>
+    
+    <div class="panel-body">
+        <div class="table table-striped">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Employee Id </th>
+                        <th>Employee Name</th>
+                        <th>Designation</th>
+                        <th>Project Id</th>
+                        <th>Action</th>
+                    </tr>
+    
+                </thead>
+                <tbody>
+                    <tr *ngFor="let e of employee ">
+                        <td>{{e.employeeId}}</td>
+                        <td>{{e.employeeName}}</td>
+                        <td>{{e.designation}}</td>
+                        <td>{{e.projectDetails.projectId}}</td>
+                        <td *ngIf="requestId">
+                            <button class="btn btn-info" (click)="updateProjectId(e.employeeId)">Assign</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </div>

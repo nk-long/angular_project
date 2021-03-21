@@ -1,0 +1,39 @@
+<div class="panel panael-primary">
+    <div class="panel-heading">
+        <h2>Job List</h2>
+    </div>
+    <div class="panel-body">
+        <div class="table table-striped">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Job Id</th>
+                        <th>job Description</th>
+                        <th>Salary</th>
+                        
+
+                        <!-- <th>Qualification</th>
+                        <th>No of Required Employee</th>
+                        <th>Request Status</th> -->
+                    </tr>
+    
+                </thead>
+                <tbody>
+                    <tr *ngFor="let j of jobpostdetails ">
+                        <td>{{j.jobId}}</td>
+                        <td>{{j.jobDescription}}</td>
+                        <td>{{j.salary}}</td>
+                        
+                        <td>
+                            <br>
+                            <br>
+                            <button (click)="details(j.jobId)"
+                               class="btn btn-primary">Click for more Details</button>
+                        
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </div>

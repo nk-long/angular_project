@@ -1,0 +1,43 @@
+
+<h2>Project Request Details</h2>
+<hr>
+<div *ngIf="request">
+    <div>
+        <label>
+            <b>Request Id : </b>{{request.requestId}}
+        </label>
+    </div>
+   
+    <div>
+        <label>
+            <b>Specialization : </b>{{request.specialization}}
+        </label>
+    </div>
+    <div>
+        <label>
+            <b>Project Id : </b>{{request.projectdetails.projectId}}
+        </label>
+    </div>
+    <div>
+        <label>
+            <b>Qualification : </b>{{request.qualification}}
+        </label>
+    </div>
+
+    <div>
+        <label>
+            <b>No of Required Employee : </b>{{request.noOfRequiredEmployee}}
+        </label>
+    </div>
+    <div>
+        <label>
+            <b>Request Status : </b>{{request.request_status}}
+        </label>
+    </div>
+    
+</div>
+<br>
+<button (click)="list()" class="btn btn-primary">Back to Request List</button>&nbsp;&nbsp;
+<button (click)="checkEmp(request.requestId)"  class="btn btn-primary">Check Available Employee</button>
+<button (click)="updateRequest(request.requestId)" class="btn btn-info" style="margin-left: 10px;">Update</button>
+

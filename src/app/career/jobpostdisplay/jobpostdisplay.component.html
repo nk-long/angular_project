@@ -1,0 +1,55 @@
+<p>jobpostdisplay works!</p>
+
+<div *ngIf="jobpost">
+    <div>
+        <label>
+            <b>Job POst Id:</b>{{jobpost.jobId}}
+        </label>
+    </div>
+    <div>
+        <label>
+            <b>job Description:</b>{{jobpost.jobDescription}}
+        </label>
+    </div>
+
+    <div>
+        <label>
+            <b>Salary:</b>{{jobpost.salary}}
+        </label>
+    </div>
+
+    <div> 
+        <label>
+            <b>Qualification:</b>{{jobpost.Qualification}}
+        </label>
+    </div>
+
+    <div>
+        <label>
+            <b>Specialization: </b>{{jobpost.specialization}}
+        </label>
+    </div>
+
+    <div>
+        <label>
+            <b>job Location: </b>{{jobpost.location}}
+        </label>
+    </div>
+
+    <div>
+        <label>
+            <b>Experinece: </b>{{jobpost.experinece}}
+        </label>
+    </div>
+
+<br>
+<br>
+ <button (click)="list1()"
+   class="btn btn-primary">View recent vacancy</button>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   <button (click)="apply()"
+   class="btn btn-primary">Apply For Job</button>
+
+
+   
+</div>

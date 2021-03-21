@@ -1,0 +1,34 @@
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+    <!--links-->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a routerLink="/hrhome/addemployee" class="nav-link" routerLinkActive="Active">Add Employee</a>
+      </li>
+      
+        <li class="nav-item">
+          <a routerLink="/hrhome/postjob" class="nav-link" routerLinkActive="Active">Post job </a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/hrhome/viewapp" class="nav-link" routerLinkActive="Active">View Application </a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/hrhome/scheduleinterview" class="nav-link" routerLinkActive="Active">Schedule Interview </a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/hrhome/interviewresult" class="nav-link" routerLinkActive="Active">Interview Result </a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/hrhome/viewrequest" class="nav-link" routerLinkActive="Active">View Request </a>
+        </li>
+        <button type="button" class="btn btn-outline-info float-left" (click)="logout()" >Log Out</button>
+    </ul>
+  </nav>
+
+  <!-- <div class="card">
+    <div class="card-body">
+      <router-outlet></router-outlet>
+
+    </div>
+  </div> -->
+
+  <router-outlet></router-outlet>

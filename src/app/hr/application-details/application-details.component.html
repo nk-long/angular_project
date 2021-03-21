@@ -1,0 +1,100 @@
+<p>Application Details</p>
+<hr>
+<div *ngIf="application">
+    <div>
+        <label>
+            <b>ApplicationID:</b>  {{application.applicationId}}
+        </label>
+    </div>
+    <div>
+        <label>
+            <b>FirstName:</b>  {{application.firstName}}
+        </label>
+    </div>
+    <div>
+        <label>
+            <b>LastName:</b>  {{application.lastName}}
+        </label>
+    </div>
+    <div>
+        <label>
+            <b>DateOfBirth:</b>  {{application.dateOfBirth}}
+        </label>
+    </div>
+    <div>
+        <label>
+            <b>Gender:</b>  {{application.gender}}
+        </label>
+    </div>
+    <div>
+        <label>
+            <b>City:</b>  {{application.city}}
+        </label>
+    </div>
+    <div>
+        <label>
+            <b>State:</b>  {{application.state}}
+        </label>
+    </div>
+    <div>
+        <label>
+            <b>Pincode:</b>  {{application.pincode}}
+        </label>
+    </div>
+    <div>
+        <label>
+            <b>Country:</b>  {{application.country}}
+        </label>
+    </div>
+    <div>
+        <label>
+            <b>EmailID:</b>  {{application.emailId}}
+        </label>
+    </div>
+    <div>
+        <label>
+            <b>PhoneNo:</b>  {{application.phoneNo}}
+        </label>
+    </div>
+    <div>
+        <label>
+            <b>SSC Marks:</b>  {{application.sscMarks}}
+        </label>
+    </div>
+    <div>
+        <label>
+            <b>HSC Marks:</b>  {{application.hhcMarks}}
+        </label>
+    </div>
+    <div>
+        <label>
+            <b>Degree:</b>  {{application.degree}}
+        </label>
+    </div>
+    <div>
+        <label>
+            <b>DegreeSpecialization:</b>  {{application.degreeSpecialization}}
+        </label>
+    </div>
+    <div>
+        <label>
+            <b>Specialization:</b>  {{application.specialization}}
+        </label>
+    </div>
+    
+    <div>
+        <label>
+            <b>Expected Salary:</b>  {{application.expectedSalary}}
+        </label>
+    </div>
+    <div>
+        <label>
+            <b>Experience:</b>  {{application.experience}}
+        </label>
+    </div>
+    
+</div>
+<br><br>
+<button (click)="list()" class="btn btn-primary">Back Application List</button>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button (click)="mailCommunication()" class="btn btn-primary">Send Mail</button>

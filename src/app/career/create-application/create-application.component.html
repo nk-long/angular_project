@@ -1,0 +1,128 @@
+
+<div [hidden] = "submitted" style="width: 400px;">
+    <form (ngSubmit)="onSubmit()">
+
+        <div class="from-group">
+            <label for="FIRST_NAME">FIRST NAME</label>
+            <input type="text" class="form-control" id="firstName" required [(ngModel)]="applicationdetails.firstName" name="applicationLine2">
+        </div>
+
+        <div class="from-group">
+            <label for="LAST_NAME">LAST NAME</label>
+            <input type="text" class="form-control" id="lastName" required [(ngModel)]="applicationdetails.lastName" name="applicationLine3">
+        </div>
+
+        <div class="from-group">
+            <label for="DATE_OF_BIRTH">DATE OF BIRTH</label>
+            <input type="date" class="form-control" id="DATE_OF_BIRTH" required [(ngModel)]="applicationdetails.dateOfBirth" name="applicationLine4">
+        </div>
+        <br>
+        <div class="from-group">
+            <label for="GENDER">GENDER</label>
+            
+                 <div class="form-check">
+                   <input class="form-check-input" type="radio"  id="GENDER" required [(ngModel)]="applicationdetails.gender" name="exampleRadios" id="maleRadio" value="male" checked>
+                    <label class="form-check-label" for="mradio">
+                      Male
+                     </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     <input class="form-check-input" type="radio"   id="GENDER" required [(ngModel)]="applicationdetails.gender"name="exampleRadios" id="femaleRadio" value="female">
+                     <label class="form-check-label" for="fRadio">
+                     Female
+                     </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     
+                      <input class="form-check-input" type="radio" id="GENDER" required [(ngModel)]="applicationdetails.gender" name="exampleRadios" id="transRadio" value="trans">
+                      <label class="form-check-label" for="transRadio">
+                     Other
+                     </label>
+                </div>
+            
+         </div>
+<br>
+         <div class="from-group">
+            <label for="CITY">CITY</label>
+            <input type="text" class="form-control" id="CITY" required [(ngModel)]="applicationdetails.city" name="allicationLine6">
+        </div>
+    
+        <div class="from-group">
+            <label for="APPLICATION_ID">STATE</label>
+            <input type="text" class="form-control" id="STATE" required [(ngModel)]="applicationdetails.state" name="applicationLine7">
+        </div>
+    
+        <div class="from-group">
+            <label for="APPLICATION_ID">PINCODE</label>
+            <input type="text" class="form-control" id="PINCODE" required [(ngModel)]="applicationdetails.pincode" name="applicationLine8">
+        </div>
+    
+        <div class="from-group">
+            <label for="APPLICATION_ID">COUNTRY</label>
+            <input type="text" class="form-control" id="country" required [(ngModel)]="applicationdetails.country" name="applicationLine9">
+        </div>
+    
+        <div class="from-group">
+            <label for="APPLICATION_ID">EMAIL_ID</label>
+            <input type="email" class="form-control" id="emailId" required [(ngModel)]="applicationdetails.emailId" name="applicationLine10">
+        </div>
+    
+        <div class="from-group">
+            <label for="PHONE_NO">PHONE NO</label>
+            <input type="text" class="form-control" id="phoneNo" required [(ngModel)]="applicationdetails.phoneNo" name="applicationLine11">
+        </div>
+    
+        <div class="from-group">
+            <label for="SSC_MARKS">SSC MARKS(%)</label>
+            <input type="text" class="form-control" id="SSC_MARKS" required [(ngModel)]="applicationdetails.sscMarks" name="applicationLine12">
+        </div>
+    
+        <div class="from-group">
+            <label for="HSC_MARKS">HSC MARKS(%)</label>
+            <input type="text" class="form-control" id="HSC_MARKS" required [(ngModel)]="applicationdetails.hhcMarks" name="applicationLine13">
+        </div>
+    
+        <div class="from-group">
+            <label for="DEGREE">DEGREE</label>
+            <input type="text" class="form-control" id="DEGREE" required [(ngModel)]="applicationdetails.degree" name="applicationLine14">
+        </div>
+    
+        <div class="from-group">
+            <label for="DEGREE_SPECIALIZATION">DEGREE SPECIALIZATION</label>
+            <input type="text" class="form-control" id="DEGREE_SPECIALIZATION" required [(ngModel)]="applicationdetails.degreeSpecialization" name="applicationLine15">
+        </div>
+    
+        <div class="from-group">
+            <label for="SPECIALIZATION">SPECIALIZATION</label>
+            <input type="text" class="form-control" id="SPECIALIZATION" required [(ngModel)]="applicationdetails.specialization" name="applicationLine16">
+        </div>
+    
+    
+        <div class="from-group">
+            <label for="EXPECTED_SALARY">EXPECTED SALARY</label>
+            <input type="text" class="form-control" id="EXPECTED_SALARY" required [(ngModel)]="applicationdetails.expectedSalary" name="applicationLine18">
+        </div>
+    
+        <div class="from-group">
+            <label for="EXPERIENCE">EXPERIENCE</label>
+            <input type="text" class="form-control" id="EXPERIENCE" required [(ngModel)]="applicationdetails.experience" name="applicationLine19">
+        </div>
+    
+        
+    
+        <br>
+        <button type="submit" class="btn btn-success">submit</button>
+    
+      </form>
+    </div>
+    
+    <div [hidden]="!submitted">
+        <h4>You Submitted Successfully!!!!!</h4>
+        <h2>You will get the confirmation via mail for the further process.</h2>
+        <button  class="btn btn-success" (click)="gotoVacancy()">View Recent Job Posts</button>
+    
+    </div>
+    
+     
+     
+    
+    
+    
+    
+    

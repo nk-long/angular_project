@@ -1,0 +1,34 @@
+<div class="panel panael-primary">
+<div class="panel-heading">
+    <h2>Project List</h2>
+</div>
+
+<div class="panel-body">
+    <div class="table table-striped">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>projectId</th>
+                    <th>projectName</th>
+                    <th>Max Strength</th>
+                    <th>Action</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr *ngFor="let p of projects | async">
+                    <td>{{p.projectId}}</td>
+                    <td>{{p.projectName}}</td>
+                    <td>{{p.maxStrength}}</td>
+                    <td>
+                        <button (click)="deleteProject(p.projectId)" class="btn btn-danger">Delete</button>
+                        <button (click)="projectDetails(p.projectId)" class="btn btn-info" style="margin-left: 10px;">Details</button>
+                        <button (click)="updateProject(p.projectId)" class="btn btn-info" style="margin-left: 10px;">Update</button>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>

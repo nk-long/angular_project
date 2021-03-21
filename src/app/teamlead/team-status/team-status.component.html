@@ -1,0 +1,31 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h2>Request Status</h2> 
+    </div>
+    <div class="panel-body">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>RequestID</th>
+                    <th>Specialization</th>
+                    <th>ProjectID</th>
+                    <th>Qualification</th>
+                    <th>RequestStatus</th>
+                    <th>NoOfRequiredEmployee</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let req of request">
+                    <td>{{req.requestId}}</td>
+                    <td>{{req.specialization}}</td>
+                    <td>{{req.projectdetails.projectId}}</td>
+                    <td>{{req.qualification}}</td>
+                    <td>{{req.request_status}}</td>
+                    <td>{{req.noOfRequiredEmployee}}</td>
+                  
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

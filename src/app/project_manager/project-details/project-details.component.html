@@ -1,0 +1,32 @@
+<h2>Project Details</h2>
+<hr>
+<div *ngIf="project">
+    <div>
+        <label>
+            <b>ProjectId : </b>{{project.projectId}}
+        </label>
+    </div>
+    <div>
+        <label>
+            <b>ProjectName : </b>{{project.projectName}}
+        </label>
+    </div>
+    <div>
+        <label>
+            <b>MaxStrength : </b>{{project.maxStrength}}
+        </label>
+    </div>
+    <div>
+        <label>
+            <b>Assigned Strength : </b>{{project.assignedStrength}}
+        </label>
+    </div>
+    <div>
+        <label>
+            <b>Specialization : </b>{{project.specialization}}
+        </label>
+    </div>
+    
+</div>
+<br>
+<button (click)="list()" class="btn btn-primary">Back to ProjectList</button>

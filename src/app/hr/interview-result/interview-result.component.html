@@ -1,0 +1,29 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h2>Interview Schedule</h2> 
+    </div>
+    <div class="panel-body">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>AssesmentID</th>
+                    <th>ApplicationID</th>
+                    <th>InterviewerID</th>
+                    <th>InterviewStatus</th>
+                    <th>Remark</th>
+                  
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let assess of assessment">
+                    <td>{{assess.assesmentId}}</td>
+                    <td>{{assess.applicationDetails.applicationId}}</td>
+                    <td>{{assess.interviewerDetails.interviewId}}</td>
+                    <td>{{assess.interviewStatus}}</td>
+                    <td>{{assess.remark}}</td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

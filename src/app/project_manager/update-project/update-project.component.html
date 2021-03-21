@@ -1,0 +1,32 @@
+<h3>Update Project</h3>
+<div style="width: 400px;">
+    <form (ngSubmit)="onSubmit()">
+        <div>
+            <label for="projectid">Project Id </label>
+        <input type="text" class="form-control" id="projectId" required [(ngModel)]="project.projectId" name="projectId">
+       </div>
+
+       <div>
+        <label for="projectname">Project Name</label>
+       <input type="text" class="form-control" id="projectName" required [(ngModel)]="project.projectName" name="projectName">
+        </div>
+
+        <div>
+            <label for="maxStrength">Project Max Strength</label>
+        <input type="text" class="form-control" id="maxStrength" required [(ngModel)]="project.maxStrength" name="maxStrength">
+        </div>
+
+    <div>
+        <label for="assignedStrength">Project Assigned Strength </label>
+        <input type="text" class="form-control" id="assignedStrength" required [(ngModel)]="project.assignedStrength" name="assignedStrength">
+    </div>
+
+    <div>
+        <label for="specialization">specialization </label>
+        <input type="text" class="form-control" id="specialization" required [(ngModel)]="project.specialization" name="specialization">
+    </div>
+
+    <button type="submit" class="btn btn-success" style="margin-top: 10px;">Update</button>
+</form>
+
+</div>
